@@ -41,8 +41,9 @@ header > p{
 }
 
 header > nav{
+    margin: auto;
     display: none;
-    width: 100%;
+    width: 98%;
     background-color: lightgray;
     padding: 2px;
 }
