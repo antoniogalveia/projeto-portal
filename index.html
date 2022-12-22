@@ -9,19 +9,75 @@
     <link rel="stylesheet" href="css/mq.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/235dcaae55.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onresize="windowSizeL()">
     <header>
         <h1>Portal Rede Desportiva</h1>
         <p>As últimas e mais atuais notícias do mundo do futebol!</p>
         <span class="material-icons" id="burguer" onclick="openMenu()">menu</span>
         <nav id="list">
-            <a href="#"> Home</a>
-            <a href="#">Notícias</a>
-            <a href="#">Contactos</a>
-            <a href="#" id="assine">Assine</a>
-            <a href="#" id="entrar">Entrar</a>
+            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#"><i class="fa-solid fa-newspaper"></i> Notícias</a>
+            <a href="#"><i class="fa-solid fa-phone"></i> Contactos</a>
+            <a href="#" id="assine"><i class="fa-solid fa-lock"></i> Assine</a>
+            <a href="#" id="entrar"><i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar</a>
         </nav>
     </header>
+    <main>
+        <h2>Destaque</h2>
+        <article id="manchete-grande">
+            <div id="imagem" style="background-image: url('https://cdn.cmjornal.pt/images/2022-12/img_900x508$2022_12_22_15_48_09_1237491.jpg');">
+            </div>
+            <div id="noticia">
+                <h3><a href="#">Evanilson falha treino devido a lesão no joelho</a></h3>
+                <p>O avançado brasileiro de 23 anos lesionou-se no jogo de ontem frente ao Gil Vicente</p>
+            </div>
+        </article>
+
+        <h2>Recomendadas</h2>
+        <article id="manchete">
+            <div id="noticia">
+                <h3><a href="#">Cristiano Ronaldo embaixador da candidatura saudita ao Mundial 2030</a></h3>
+                <p>'A Marca' revela detahes que levam o craque português ao Al Nassr.</p>
+            </div>
+            <div id="imagem" style="background-image: url('https://cdn.cmjornal.pt/images/2022-12/img_590x333$2022_12_22_10_20_27_1237236.jpg');">
+            </div>
+        </article>
+        <hr>
+        <article id="manchete">
+            <div id="noticia">
+                <h3><a href="#">Uribe deito por conduzir ilegalmente</a></h3>
+                <p>Carta de condução columbiana do jogador não é válida em Portugal.</p>
+            </div>
+            <div id="imagem" style="background-image: url('https://cdn.cmjornal.pt/images/2022-12/img_590x333$2022_12_22_15_54_48_1237494.jpg');">
+            </div>
+        </article>
+        <hr>
+        <article id="manchete">
+            <div id="noticia">
+                <h3><a href="#">Portugal em nono lugar no ranking da FIFA</a> </h3>
+                <p>O Brasil detém o primeiro lugar, enquando a Argentina assume vice-liderança.</p>
+            </div>
+            <div id="imagem" style="background-image: url('https://cdn.cmjornal.pt/images/2017-04/img_298x168$2017_04_06_12_03_00_615781.jpg');">
+            </div>
+        </article>
+        <hr>
+        <article id="manchete">
+            <div id="noticia">
+                <h3><a href="#">Cancro de Pelé alastra-se e a sua saúde agrava-se.</a></h3>
+                <p>As filhas do antigo craque anunciaram que jogador vai passar o Natal internado.</p>
+            </div>
+            <div id="imagem" style="background-image: url('https://cdn.cmjornal.pt/images/2022-12/img_298x168$2022_12_04_20_51_38_1221352.jpg');">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div id="icones">
+            <a href=""><i class="fa-brands fa-github"></i></a><a href=""><i class="fa-brands fa-linkedin"></i></a><a href=""><i class="fa-brands fa-twitter"></i></a><a href=""><i class="fa-brands fa-discord" id="discord"></i></a>
+        </div>
+        <p>Página criada no âmbito do Curso de HTML & CSS. Estas notícias, bem como as suas imagens foram retiradas do site <a href="https://www.cmjornal.pt/">Correio da Manhã</a>.</p>
+    </footer>
 </body>
 </html>

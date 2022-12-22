@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+:root{
+    --cor-principal: rgb(170, 0, 0);
+    --cor-secundaria: rgb(48, 48, 48);
+    --cor-terciaria: rgb(102, 102, 102);
+}
+
+
+@media screen and (min-width: 992px){
+
+    #burguer{
+        display: none;
+    }
+
+    header > nav{
+        display: block;
+        width: 100%;
+        padding: 2px;
+        background-color: var(--cor-principal);
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    header > nav > a {
+        display: inline-block;
+        text-align: center;
+        background-color: var(--cor-principal);
+        margin-top: 3px;
+        padding: 8px;
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        font-weight: bold;
+    }
+
+    #assine{
+        background-color: var(--cor-secundaria);
+    }
+    
+    #entrar{
+        background-color: var(--cor-principal);
+        border: 1px solid white;
+    }
+
+    main{
+        margin: auto;
+        margin-bottom: 30px;
+        width: 50vw;
+        padding: 5px;
+    }
+    
+    main > h2{
+        text-decoration: underline;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        text-indent: 20px;
+    }
+    
+    #manchete-grande{
+        overflow: hidden;
+        height: 470px;
+    }
+    
+    #manchete-grande > #noticia{
+        height: 30%;
+    }
+    
+    #manchete-grande > div > h3{
+        padding: 5px;
+        font-size: 1.4em;
+    }
+    
+    #manchete-grande > div > h3 > a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #manchete-grande > div > h3 > a:hover{
+        text-decoration: underline;
+    }
+    
+    #manchete-grande > div > p{
+        padding: 5px;
+        line-height: 1.2em;
+        text-indent: 10px;
+    }
+    
+    #manchete-grande > #imagem{
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        height: 70%;
+    }
+    
+    #manchete{
+        overflow: hidden;
+        height: 135px;
+    }
+    
+    #manchete > #noticia{
+        width: 60%;
+        height: 100%;
+        float: left;
+    }
+    
+    #manchete > div > h3{
+        padding: 5px;
+        font-size: 1.1em;
+    }
+    
+    #manchete > div > h3 > a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #manchete > div > h3 > a:hover{
+        text-decoration: underline;
+    }
+    
+    #manchete > div > p{
+        padding: 5px;
+        line-height: 1.1em;
+        text-indent: 10px;
+    }
+    
+    
+    #manchete > #imagem{
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        width: 40%;
+        height: 100%;
+        float: right;
+    }
+    
+    main > hr{
+        margin: 30px 0;
+    }
+}
