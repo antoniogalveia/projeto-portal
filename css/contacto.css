@@ -1,0 +1,474 @@
+@charset "UTF-8";
+
+/*Paleta de Cores*/
+:root{
+    --cor-principal: rgb(170, 0, 0);
+    --cor-secundaria: rgb(48, 48, 48);
+    --cor-terciaria: rgb(102, 102, 102);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/*
+------------------------------------------------------
+-----------------------Cabeçalho----------------------
+------------------------------------------------------
+*/
+
+header{ /*Configurações do Cabeçalho*/
+    background-color: var(--cor-principal);
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+header > h1{ /*Configurações do Título Principal*/
+    padding: 10px;
+    font-size: 1.8em;
+    text-align: center;
+    color: white;
+}
+
+header > p{ /*Configurações do Parágrafo do Cabeçalho*/
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+header > nav{ /*Configurações do menu*/
+    /* background-color: lightgray; */
+    display: none;
+    width: 30%;
+    margin: auto;
+    padding: 2px;
+}
+
+header > nav > a { /*Configurações dos links do menu*/
+    /* background-color: var(--cor-terciaria); */
+    display: block;
+    margin-top: 3px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    /* border-radius: 3px; */
+}
+
+#assine{ /*Configurações do link #assine*/
+    background-color: var(--cor-secundaria);
+    border: none;
+    border-radius: 3px;
+}
+
+#entrar{ /*Configurações do link #entrar*/
+    background-color: var(--cor-principal);
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+#burguer { /*Configurações do icone do menu para dispositivos com <600px de largura*/
+    display: block;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: right;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+/*
+------------------------------------------------------
+-------------------------Corpo------------------------
+------------------------------------------------------
+*/
+
+main{ /*Configurações do container*/
+    width: 94vw;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+main > h2{  /*Configurações dos subtítulos*/
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-indent: 20px;
+}
+
+
+section{
+    width: 100%;
+}
+
+form > div{
+    width: 100%;
+}
+
+form > div > label{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--cor-principal);
+}
+
+form > div > input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 99%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form > div > input:focus{
+    outline: none;
+    font-size: 1em;
+}
+
+form > div > select{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form > div > select:focus{
+    outline: none;
+    background-color: rgb(247, 247, 247);
+}
+
+
+form > div > select > option{
+    text-align: center;
+}
+
+form > div > textarea{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 99%;
+    height: 300px;
+}
+
+form > div > textarea:focus{
+    outline: none;
+    font-size: 1em;
+}
+
+form > div > #submit{
+    width: 35%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--cor-principal);
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    display: block;
+}
+
+form > div > #submit:hover{
+    background-color: transparent;
+    border: 1px solid var(--cor-principal);
+    color: var(--cor-principal);
+}
+
+
+
+#manchete{  /*Configurações das noticias*/
+    height: 135px;
+    overflow: hidden;
+}
+
+#manchete > #noticia{ /*Configurações da caixa que contem o titulo e paragrafo da noticia */
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+#manchete > div > h3{ /*Configurações do titulo da noticia*/
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+#manchete > div > h3 > a{  /*Configurações do titulo da noticia*/
+    text-decoration: none;
+    color: black;
+}
+
+#manchete > div > h3 > a:hover{  /*Configurações do titulo da noticia*/
+    text-decoration: underline;
+}
+
+#manchete > div > p{  /*Configurações do paragrafo da noticia*/
+    padding: 5px;
+    text-indent: 10px;
+    line-height: 1.1em;
+}
+
+
+#manchete > #imagem{  /*Configurações da caixa que tem a imagem da noticia*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+
+main > hr{  /*Configurações das divisões entre as noticias*/
+    margin: 30px 0;
+}
+
+
+
+
+
+/*
+------------------------------------------------------
+------------------------RODAPÉ------------------------
+------------------------------------------------------
+*/
+
+
+footer{ /*Configurações do rodapé da página*/
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    color: white;
+}
+
+footer > div#icones{ /*Configurações da caixa que contem os icones*/
+    width: 100%;
+    text-align: center;
+}
+
+footer > div#icones > a{ /*Configurações dos icones*/
+    color: white;
+}
+
+footer > div#icones > a > i{  /*Configurações dos icones*/
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+footer > div#icones > a > #discord{  /*Configurações do icone #discord*/
+    /* Este icone foi especialmente configurado nas CSS, pois ao utilizar 'border-radius: 50%' no seletor acima,
+    o icone ficava com uma largura maior a sua altura, criando uma forma oval. Para criar um círculo perfeito
+    igual aos restantes, foi configurado aqui. */
+    padding: 16px 14px;
+}
+
+footer > div#icones > a > i:hover{  /*Configurações dos icones*/
+    background-color: white;
+    color: black;
+    transform: translateY(-4px);
+    transition: transform 0.5s;
+}
+
+footer > p{  /*Configurações do paragrafo do rodapé*/
+    margin-top: 5px;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+}
+
+footer > p > a{  /*Configurações do link que está dentro do parágrafo do rodapé */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer > p > a:hover{  /*Configurações do link que está dentro do parágrafo do rodapé */
+    text-decoration: underline;
+}
+
+
+
+
+
+/*
+------------------------------------------------------
+---------------------Media-Queries--------------------
+------------------------------------------------------
+*/
+
+
+/*  --->---Telas com mais de 768px de largura---<---  */
+@media screen and (min-width: 768px) {
+    #burguer{  /*Configurações do icone do menu para dispositivos com mais de 992px de largura*/
+        display: none;
+    }
+
+    header > nav{  /*Configurações do menu*/
+        background-color: var(--cor-principal);
+        display: block;
+        width: 100%;
+        padding: 2px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    header > nav > a{  /*Configurações dos links do menu*/
+        border: none;
+        border-radius: none;
+    }
+
+    header > nav > a:hover{  /*Configurações dos links do menu*/
+        text-decoration: underline;
+    }
+
+    #assine:hover{  /*Configurações do link #assine*/
+        background-color: var(--cor-terciaria);
+    }
+
+    #entrar:hover{  /*Configurações do link #entrar*/
+        background-color: var(--cor-terciaria);
+    }
+}
+
+
+
+/*  --->---Telas entre 768px e 992px de largura---<---  */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    header > nav > a {  /*Configurações dos links do menu*/
+        background-color: var(--cor-principal);
+        display: inline-block;
+        margin-top: 3px;
+        padding: 8px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    #assine{  /*Configurações do link #assine*/
+        background-color: var(--cor-secundaria);
+    }
+    
+    #entrar{  /*Configurações do link #entrar*/
+        background-color: var(--cor-principal);
+        border: 1px solid white;
+    }
+
+
+    main{  /*Configurações do container*/
+        width: 90vw;
+    }
+    
+    /*
+    #manchete > #noticia{
+        float: right;
+    }
+    
+    #manchete > div > h3{
+        text-indent: 10px;
+    }
+    
+    #manchete > #imagem{ 
+        float: left;
+    }
+
+    */
+}
+
+
+
+/*  --->---Telas com mais de 992px de largura---<---  */
+@media screen and (min-width: 992px){
+    header > nav > a {  /*Configurações dos links do menu*/
+        background-color: var(--cor-principal);
+        display: inline-block;
+        margin-top: 3px;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    #assine{  /*Configurações do link #assine*/
+        background-color: var(--cor-secundaria);
+    }
+    
+    #entrar{ /*Configurações do link #entrar*/
+        background-color: var(--cor-principal);
+        border: 1px solid white;
+    }
+
+    main{  /*Configurações do container*/
+        width: 600px;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+    
+    main > h2{  /*Configurações dos subtitulos*/
+        margin-bottom: 15px;
+        margin-top: 10px;
+        text-decoration: underline;
+        text-indent: 20px;
+    }
+
+    /*      
+            #manchete{
+                height: 135px;
+                overflow: hidden;
+            }
+            
+            #manchete > #noticia{
+                width: 60%;
+                height: 100%;
+                float: left;
+            }
+            
+            #manchete > div > h3{
+                padding: 5px;
+                font-size: 1.1em;
+            }
+            
+            #manchete > div > h3 > a{
+                text-decoration: none;
+                color: black;
+            }
+            
+            #manchete > div > h3 > a:hover{
+                text-decoration: underline;
+            }
+            
+            #manchete > div > p{
+                padding: 5px;
+                text-indent: 10px;
+                line-height: 1.1em;
+            }
+            
+            
+            #manchete > #imagem{
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: block;
+                width: 40%;
+                height: 100%;
+                float: right;
+            }
+            
+            main > hr{
+                margin: 30px 0;
+            }
+    */
+}

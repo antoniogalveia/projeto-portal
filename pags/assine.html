@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Rede Desportiva - As ultimas notícias do futebol mundial</title>
+    <link rel="stylesheet" href="../css/assine.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../js/index.js"></script>
+    <script src="https://kit.fontawesome.com/235dcaae55.js" crossorigin="anonymous"></script>
+</head>
+
+<body onresize="windowSizeL()">
+
+    <header>
+        <h1>Portal Rede Desportiva</h1>
+        <p>As últimas e mais atuais notícias do mundo do futebol!</p>
+        <div><a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a></div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Assine e obtenha noticias exclusivas</h2>
+            <p>Ao assinar, tem acesso a:</p>
+            <ul>
+                <li>Noticias Exclusivas para assinantes</li>
+                <li>Recebe notificações na hora</li>
+                <li>Possibilidade de receber newsletters</li>
+            </ul>
+            <form action="registar.php" method="post" autocomplete="off">
+                <div>
+                    <label for="pnome">Primeiro Nome</label><br>
+                    <input type="text" name="pnome" id="pnome" required>    
+                </div>
+                <div>
+                    <label for="apelido">Apelido</label><br>
+                    <input type="text" name="apelido" id="apelido" required>
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">Palavra Passe</label><br>
+                    <input type="password" name="password" id="password" required minlength="8" maxlength="20">
+                </div>
+                <div>
+                    <input type="submit" value="Registar" id="submit">
+                </div>
+            </form>
+            <div>
+                <button><a href="./entrar.html">Já registado? Acesse a sua conta</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="icones">
+            <a href="https://github.com/antoniogalveia"><i class="fa-brands fa-github"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-discord" id="discord"></i></a>
+        </div>
+
+        <p>Página criada no âmbito do Curso de HTML & CSS. Estas notícias, bem como as suas imagens foram retiradas do site <a href="https://www.cmjornal.pt/">Correio da Manhã</a>.</p>
+    </footer>
+</body>
+</html>

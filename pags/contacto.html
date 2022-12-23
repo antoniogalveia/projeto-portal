@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Rede Desportiva - As ultimas notícias do futebol mundial</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../js/index.js"></script>
+    <script src="https://kit.fontawesome.com/235dcaae55.js" crossorigin="anonymous"></script>
+</head>
+
+<body onresize="windowSizeL()">
+
+    <header>
+        <h1>Portal Rede Desportiva</h1>
+        <p>As últimas e mais atuais notícias do mundo do futebol!</p>
+        <span class="material-icons" id="burguer" onclick="openMenu()">menu</span>
+        <nav id="list">
+            <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="./noticias.html"><i class="fa-solid fa-newspaper"></i> Notícias</a>
+            <a href="#"><i class="fa-solid fa-phone"></i> Contacto</a>
+            <a href="./assine.html" id="assine"><i class="fa-solid fa-lock"></i> Assine</a>
+            <a href="./entrar.html" id="entrar"><i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Envie-nos uma mensagem</h2>
+        <section>
+            <form action="contacto.php" method="post" autocomplete="off">
+                <div>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" name="nome" id="nome" required>    
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="assunto">Assunto</label><br>
+                    <select name="assunto" id="assunto" required>
+                        <option value="" selected>---Selecione Abaixo---</option>
+                        <option value="noticias">Noticias</option>
+                        <option value="infos">Informações</option>
+                        <option value="reg">Registo e Acesso</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensagem">A sua mensagem</label><br>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="20" style="resize: none;" id="textarea" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar Mensagem" id="submit">
+                </div>
+            </form>
+        </section>
+        <hr>
+        <article id="manchete">
+            <div id="noticia">
+                <h3><a href="#">Portugal em nono lugar no ranking da FIFA</a> </h3>
+                <p>O Brasil detém o primeiro lugar, enquando a Argentina assume vice-liderança.</p>
+            </div>
+            <div id="imagem" style="background-image: url('https://cdn.cmjornal.pt/images/2017-04/img_298x168$2017_04_06_12_03_00_615781.jpg');">
+            </div>
+        </article>
+        <hr>
+        <article id="manchete">
+            <div id="noticia">
+                <h3><a href="#">Cancro de Pelé alastra-se e a sua saúde agrava-se.</a></h3>
+                <p>As filhas do antigo craque anunciaram que jogador vai passar o Natal internado.</p>
+            </div>
+            <div id="imagem" style="background-image: url('https://cdn.cmjornal.pt/images/2022-12/img_298x168$2022_12_04_20_51_38_1221352.jpg');">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div id="icones">
+            <a href="https://github.com/antoniogalveia"><i class="fa-brands fa-github"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-discord" id="discord"></i></a>
+        </div>
+
+        <p>Página criada no âmbito do Curso de HTML & CSS. Estas notícias, bem como as suas imagens foram retiradas do site <a href="https://www.cmjornal.pt/">Correio da Manhã</a>.</p>
+    </footer>
+</body>
+</html>

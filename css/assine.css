@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+/*Paleta de Cores*/
+:root{
+    --cor-principal: rgb(170, 0, 0);
+    --cor-secundaria: rgb(48, 48, 48);
+    --cor-terciaria: rgb(102, 102, 102);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/*
+------------------------------------------------------
+-----------------------Cabeçalho----------------------
+------------------------------------------------------
+*/
+
+header{ /*Configurações do Cabeçalho*/
+    background-color: white;
+}
+
+header > h1{ /*Configurações do Título Principal*/
+    padding: 10px;
+    font-size: 1.8em;
+    text-align: center;
+    color: var(--cor-principal);
+}
+
+header > p{ /*Configurações do Parágrafo do Cabeçalho*/
+    font-style: italic;
+    text-align: center;
+    color: var(--cor-principal);
+}
+
+header > div{
+    padding: 10px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+header > div > a > i{
+    background-color: var(--cor-principal);
+    padding: 9px 11px;
+    font-size: 1.8em;
+    color: white;
+    border-radius: 50%;
+}
+
+header > div > a > i:hover{
+    background-color: white;
+    padding: 9px 11px;
+    font-size: 1.8em;
+    color: var(--cor-principal);
+    border-radius: 50%;
+    border: 1px solid var(--cor-principal);
+}
+
+
+
+
+/*
+------------------------------------------------------
+-------------------------Corpo------------------------
+------------------------------------------------------
+*/
+
+main{ /*Configurações do container*/
+    width: 94vw;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+main > section > h2{  /*Configurações dos subtítulos*/
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+}
+
+
+section{
+    display: block;
+    margin: auto;
+    width: 95%;
+    background-color: var(--cor-principal);
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.466);
+}
+
+section > p{
+    color: white;
+    font-weight: bold;
+}
+
+section > ul{
+    color: white;
+    text-indent: 20px;
+    margin-bottom: 50px;
+}
+
+form > div{
+    width: 100%;
+}
+
+form > div > label{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+}
+
+form > div > input{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    width: 99%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+form > div > input:focus{
+    outline: none;
+    font-size: 1em;
+}
+
+form > div > select{
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+form > div > select:focus{
+    outline: none;
+    background-color: transparent;
+    color: black;
+}
+
+
+form > div > select > option{
+    text-align: center;
+}
+
+form > div > textarea{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 99%;
+    height: 300px;
+    color: white;
+}
+
+form > div > textarea:focus{
+    outline: none;
+    font-size: 1em;
+}
+
+form > div > #submit{
+    width: 35%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    color: var(--cor-principal);
+    font-weight: bold;
+    margin: auto;
+    display: block;
+}
+
+form > div > #submit:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+section > div{
+    text-align: center;
+}
+
+section > div > button{
+    border: none;
+    background-color: transparent;
+}
+
+section > div > button > a{
+    color: white;
+    text-decoration: none;
+}
+
+section > div > button > a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+/*
+------------------------------------------------------
+------------------------RODAPÉ------------------------
+------------------------------------------------------
+*/
+
+
+footer{ /*Configurações do rodapé da página*/
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    color: white;
+}
+
+footer > div#icones{ /*Configurações da caixa que contem os icones*/
+    width: 100%;
+    text-align: center;
+}
+
+footer > div#icones > a{ /*Configurações dos icones*/
+    color: white;
+}
+
+footer > div#icones > a > i{  /*Configurações dos icones*/
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+footer > div#icones > a > #discord{  /*Configurações do icone #discord*/
+    /* Este icone foi especialmente configurado nas CSS, pois ao utilizar 'border-radius: 50%' no seletor acima,
+    o icone ficava com uma largura maior a sua altura, criando uma forma oval. Para criar um círculo perfeito
+    igual aos restantes, foi configurado aqui. */
+    padding: 16px 14px;
+}
+
+footer > div#icones > a > i:hover{  /*Configurações dos icones*/
+    background-color: white;
+    color: black;
+    transform: translateY(-4px);
+    transition: transform 0.5s;
+}
+
+footer > p{  /*Configurações do paragrafo do rodapé*/
+    margin-top: 5px;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+}
+
+footer > p > a{  /*Configurações do link que está dentro do parágrafo do rodapé */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer > p > a:hover{  /*Configurações do link que está dentro do parágrafo do rodapé */
+    text-decoration: underline;
+}
+
+
+
+
+
+/*
+------------------------------------------------------
+---------------------Media-Queries--------------------
+------------------------------------------------------
+*/
+
+/*  --->---Telas entre 768px e 992px de largura---<---  */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    main{  /*Configurações do container*/
+        width: 90vw;
+    }
+}
+
+
+
+/*  --->---Telas com mais de 992px de largura---<---  */
+@media screen and (min-width: 992px){
+    main{  /*Configurações do container*/
+        width: 600px;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+    
+    main > section > h2{  /*Configurações dos subtitulos*/
+        margin-bottom: 15px;
+        margin-top: 10px;
+        text-decoration: underline;
+        text-align: center;
+    }
+}

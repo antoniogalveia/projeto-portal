@@ -368,7 +368,7 @@ footer > p > a:hover{  /*Configurações do link que está dentro do parágrafo 
     }
 
     main{  /*Configurações do container*/
-        width: 50vw;
+        width: 600px;
         margin: auto;
         margin-bottom: 30px;
         padding: 5px;
