@@ -1,12 +1,11 @@
 @charset "UTF-8";
 
+/*Paleta de Cores*/
 :root{
     --cor-principal: rgb(170, 0, 0);
     --cor-secundaria: rgb(48, 48, 48);
     --cor-terciaria: rgb(102, 102, 102);
 }
-
-
 
 *{
     margin: 0;
@@ -19,153 +18,165 @@
 
 
 
-/* CABEÇALHO */
+/*
+------------------------------------------------------
+-----------------------Cabeçalho----------------------
+------------------------------------------------------
+*/
 
-
-header{
+header{ /*Configurações do Cabeçalho*/
     background-color: var(--cor-principal);
     border-bottom: 1px solid rgb(185, 185, 185);
 }
 
-header > h1{
-    text-align: center;
-    font-size: 1.8em;
+header > h1{ /*Configurações do Título Principal*/
     padding: 10px;
-    color: white;
-}
-
-header > p{
+    font-size: 1.8em;
     text-align: center;
-    font-style: italic;
     color: white;
 }
 
-header > nav{
-    margin: auto;
+header > p{ /*Configurações do Parágrafo do Cabeçalho*/
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+header > nav{ /*Configurações do menu*/
+    /* background-color: lightgray; */
     display: none;
-    width: 98%;
-    background-color: lightgray;
+    width: 30%;
+    margin: auto;
     padding: 2px;
 }
 
-header > nav > a {
+header > nav > a { /*Configurações dos links do menu*/
+    /* background-color: var(--cor-terciaria); */
     display: block;
-    text-align: center;
-    background-color: var(--cor-terciaria);
     margin-top: 3px;
     padding: 8px;
-    color: white;
+    text-align: center;
     text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    /* border-radius: 3px; */
+}
+
+#assine{ /*Configurações do link #assine*/
+    background-color: var(--cor-secundaria);
+    border: none;
     border-radius: 3px;
 }
 
-#assine{
-    background-color: var(--cor-secundaria);
-}
-
-#entrar{
+#entrar{ /*Configurações do link #entrar*/
     background-color: var(--cor-principal);
+    border: 1px solid white;
+    border-radius: 3px;
 }
 
-#burguer {
+#burguer { /*Configurações do icone do menu para dispositivos com <600px de largura*/
     display: block;
-    text-align: right;
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 5px;
-    cursor: pointer;
+    text-align: right;
     color: white;
+    cursor: pointer;
 }
 
 
 
 
 
-/* CORPO */
+/*
+------------------------------------------------------
+-------------------------Corpo------------------------
+------------------------------------------------------
+*/
 
-main{
+main{ /*Configurações do container*/
+    width: 94vw;
     margin: auto;
     margin-bottom: 30px;
-    width: 94vw;
     padding: 5px;
 }
 
-main > h2{
-    text-decoration: underline;
-    margin-bottom: 15px;
+main > h2{  /*Configurações dos subtítulos*/
     margin-top: 10px;
+    margin-bottom: 15px;
+    text-decoration: underline;
     text-indent: 20px;
 }
 
-#manchete-grande{
-    overflow: hidden;
+#manchete-grande{  /*Configurações da manchete da página */
     height: 470px;
+    overflow: hidden;
 }
 
-#manchete-grande > #noticia{
+#manchete-grande > #noticia{ /*Configurações da caixa que contém o titulo da noticia da manchete*/
     height: 30%;
 }
 
-#manchete-grande > div > h3{
+#manchete-grande > div > h3{  /*Configurações do titulo da manchete*/
     padding: 5px;
     font-size: 1.4em;
 }
 
-#manchete-grande > div > h3 > a{
+#manchete-grande > div > h3 > a{  /*Configurações do titulo da manchete*/
     text-decoration: none;
     color: black;
 }
 
-#manchete-grande > div > h3 > a:hover{
+#manchete-grande > div > h3 > a:hover{  /*Configurações do titulo da manchete*/
     text-decoration: underline;
 }
 
-#manchete-grande > div > p{
+#manchete-grande > div > p{  /*Configurações do paragrafo da notica da manchete*/
     padding: 5px;
-    line-height: 1.2em;
     text-indent: 10px;
+    line-height: 1.2em;
 }
 
-#manchete-grande > #imagem{
+#manchete-grande > #imagem{  /*Configurações da caixa que tem a imagem da noticia*/
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
     height: 70%;
 }
 
-#manchete{
-    overflow: hidden;
+#manchete{  /*Configurações das noticias*/
     height: 135px;
+    overflow: hidden;
 }
 
-#manchete > #noticia{
+#manchete > #noticia{ /*Configurações da caixa que contem o titulo e paragrafo da noticia */
     width: 60%;
     height: 100%;
     float: left;
 }
 
-#manchete > div > h3{
+#manchete > div > h3{ /*Configurações do titulo da noticia*/
     padding: 5px;
     font-size: 1.1em;
 }
 
-#manchete > div > h3 > a{
+#manchete > div > h3 > a{  /*Configurações do titulo da noticia*/
     text-decoration: none;
     color: black;
 }
 
-#manchete > div > h3 > a:hover{
+#manchete > div > h3 > a:hover{  /*Configurações do titulo da noticia*/
     text-decoration: underline;
 }
 
-#manchete > div > p{
+#manchete > div > p{  /*Configurações do paragrafo da noticia*/
     padding: 5px;
-    line-height: 1.1em;
     text-indent: 10px;
+    line-height: 1.1em;
 }
 
 
-#manchete > #imagem{
+#manchete > #imagem{  /*Configurações da caixa que tem a imagem da noticia*/
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
@@ -174,7 +185,7 @@ main > h2{
     float: right;
 }
 
-main > hr{
+main > hr{  /*Configurações das divisões entre as noticias*/
     margin: 30px 0;
 }
 
@@ -182,58 +193,63 @@ main > hr{
 
 
 
+/*
+------------------------------------------------------
+------------------------RODAPÉ------------------------
+------------------------------------------------------
+*/
 
-/* RODAPÉ */
 
-
-
-footer{
+footer{ /*Configurações do rodapé da página*/
     background-color: rgb(34, 34, 34);
-    color: white;
     padding: 10px;
+    color: white;
 }
 
-footer > div#icones{
+footer > div#icones{ /*Configurações da caixa que contem os icones*/
     width: 100%;
     text-align: center;
 }
 
-footer > div#icones > a{
+footer > div#icones > a{ /*Configurações dos icones*/
     color: white;
 }
 
-footer > div#icones > a > i{
-    padding: 15px;
+footer > div#icones > a > i{  /*Configurações dos icones*/
     margin: 5px;
+    padding: 15px;
     border: 1px solid white;
     border-radius: 50%;
 }
 
-footer > div#icones > a > #discord{
+footer > div#icones > a > #discord{  /*Configurações do icone #discord*/
+    /* Este icone foi especialmente configurado nas CSS, pois ao utilizar 'border-radius: 50%' no seletor acima,
+    o icone ficava com uma largura maior a sua altura, criando uma forma oval. Para criar um círculo perfeito
+    igual aos restantes, foi configurado aqui. */
     padding: 16px 14px;
 }
 
-footer > div#icones > a > i:hover{
+footer > div#icones > a > i:hover{  /*Configurações dos icones*/
     background-color: white;
     color: black;
     transform: translateY(-4px);
     transition: transform 0.5s;
 }
 
-footer > p{
+footer > p{  /*Configurações do paragrafo do rodapé*/
     margin-top: 5px;
     font-size: 0.8em;
     font-style: italic;
     text-align: center;
 }
 
-footer > p > a{
+footer > p > a{  /*Configurações do link que está dentro do parágrafo do rodapé */
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
-footer > p > a:hover{
+footer > p > a:hover{  /*Configurações do link que está dentro do parágrafo do rodapé */
     text-decoration: underline;
 }
 
@@ -241,71 +257,77 @@ footer > p > a:hover{
 
 
 
+/*
+------------------------------------------------------
+---------------------Media-Queries--------------------
+------------------------------------------------------
+*/
 
 
-
-
-/* MEDIA QUERIES */
-
-/*Telas com mais de 768px de largura*/
+/*  --->---Telas com mais de 768px de largura---<---  */
 @media screen and (min-width: 768px) {
-    header > nav > a:hover{
+    #burguer{  /*Configurações do icone do menu para dispositivos com mais de 992px de largura*/
+        display: none;
+    }
+
+    header > nav{  /*Configurações do menu*/
+        background-color: var(--cor-principal);
+        display: block;
+        width: 100%;
+        padding: 2px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    header > nav > a{  /*Configurações dos links do menu*/
+        border: none;
+        border-radius: none;
+    }
+
+    header > nav > a:hover{  /*Configurações dos links do menu*/
         text-decoration: underline;
     }
 
-    #assine:hover{
+    #assine:hover{  /*Configurações do link #assine*/
         background-color: var(--cor-terciaria);
     }
 
-    #entrar:hover{
+    #entrar:hover{  /*Configurações do link #entrar*/
         background-color: var(--cor-terciaria);
     }
 }
 
-/*Telas entre 768px e 992px de largura*/
-/*Tablets e Telemoveis Grandes*/
+
+
+/*  --->---Telas entre 768px e 992px de largura---<---  */
 @media screen and (min-width: 768px) and (max-width: 992px){
-
-    #burguer{
-        display: none;
-    }
-
-    header > nav{
-        display: block;
-        width: 100%;
-        padding: 2px;
+    header > nav > a {  /*Configurações dos links do menu*/
         background-color: var(--cor-principal);
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-
-    header > nav > a {
         display: inline-block;
-        text-align: center;
-        background-color: var(--cor-principal);
         margin-top: 3px;
         padding: 8px;
-        color: white;
-        text-decoration: none;
-        border-radius: 3px;
         font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: white;
     }
 
-    #assine{
+    #assine{  /*Configurações do link #assine*/
         background-color: var(--cor-secundaria);
     }
     
-    #entrar{
+    #entrar{  /*Configurações do link #entrar*/
         background-color: var(--cor-principal);
         border: 1px solid white;
     }
 
 
-    main{
+    main{  /*Configurações do container*/
         width: 90vw;
     }
     
+    /*
     #manchete > #noticia{
         float: right;
     }
@@ -314,142 +336,131 @@ footer > p > a:hover{
         text-indent: 10px;
     }
     
-    #manchete > #imagem{
+    #manchete > #imagem{ 
         float: left;
     }
+
+    */
 }
 
-/*Telas com mais de 992px de largura*/
-/*Notebook, Desktop, TV*/
+
+
+/*  --->---Telas com mais de 992px de largura---<---  */
 @media screen and (min-width: 992px){
-
-    #burguer{
-        display: none;
-    }
-
-    header > nav{
-        display: block;
-        width: 100%;
-        padding: 2px;
+    header > nav > a {  /*Configurações dos links do menu*/
         background-color: var(--cor-principal);
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-
-    header > nav > a {
         display: inline-block;
-        text-align: center;
-        background-color: var(--cor-principal);
         margin-top: 3px;
         padding: 8px;
-        color: white;
+        text-align: center;
         text-decoration: none;
-        border-radius: 3px;
+        color: white;
         font-weight: bold;
     }
 
-    #assine{
+    #assine{  /*Configurações do link #assine*/
         background-color: var(--cor-secundaria);
     }
     
-    #entrar{
+    #entrar{ /*Configurações do link #entrar*/
         background-color: var(--cor-principal);
         border: 1px solid white;
     }
 
-    main{
+    main{  /*Configurações do container*/
+        width: 50vw;
         margin: auto;
         margin-bottom: 30px;
-        width: 50vw;
         padding: 5px;
     }
     
-    main > h2{
-        text-decoration: underline;
+    main > h2{  /*Configurações dos subtitulos*/
         margin-bottom: 15px;
         margin-top: 10px;
+        text-decoration: underline;
         text-indent: 20px;
     }
-    
-    #manchete-grande{
-        overflow: hidden;
-        height: 470px;
-    }
-    
-    #manchete-grande > #noticia{
-        height: 30%;
-    }
-    
-    #manchete-grande > div > h3{
-        padding: 5px;
-        font-size: 1.4em;
-    }
-    
-    #manchete-grande > div > h3 > a{
-        text-decoration: none;
-        color: black;
-    }
-    
-    #manchete-grande > div > h3 > a:hover{
-        text-decoration: underline;
-    }
-    
-    #manchete-grande > div > p{
-        padding: 5px;
-        line-height: 1.2em;
-        text-indent: 10px;
-    }
-    
-    #manchete-grande > #imagem{
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: block;
-        height: 70%;
-    }
-    
-    #manchete{
-        overflow: hidden;
-        height: 135px;
-    }
-    
-    #manchete > #noticia{
-        width: 60%;
-        height: 100%;
-        float: left;
-    }
-    
-    #manchete > div > h3{
-        padding: 5px;
-        font-size: 1.1em;
-    }
-    
-    #manchete > div > h3 > a{
-        text-decoration: none;
-        color: black;
-    }
-    
-    #manchete > div > h3 > a:hover{
-        text-decoration: underline;
-    }
-    
-    #manchete > div > p{
-        padding: 5px;
-        line-height: 1.1em;
-        text-indent: 10px;
-    }
-    
-    
-    #manchete > #imagem{
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: block;
-        width: 40%;
-        height: 100%;
-        float: right;
-    }
-    
-    main > hr{
-        margin: 30px 0;
-    }
+
+    /*
+            #manchete-grande{
+                height: 470px;
+                overflow: hidden;
+            }
+            
+            #manchete-grande > #noticia{
+                height: 30%;
+            }
+            
+            #manchete-grande > div > h3{
+                padding: 5px;
+                font-size: 1.4em;
+            }
+            
+            #manchete-grande > div > h3 > a{
+                text-decoration: none;
+                color: black;
+            }
+            
+            #manchete-grande > div > h3 > a:hover{
+                text-decoration: underline;
+            }
+            
+            #manchete-grande > div > p{
+                padding: 5px;
+                text-indent: 10px;
+                line-height: 1.2em;
+            }
+            
+            #manchete-grande > #imagem{
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: block;
+                height: 70%;
+            }
+            
+            #manchete{
+                height: 135px;
+                overflow: hidden;
+            }
+            
+            #manchete > #noticia{
+                width: 60%;
+                height: 100%;
+                float: left;
+            }
+            
+            #manchete > div > h3{
+                padding: 5px;
+                font-size: 1.1em;
+            }
+            
+            #manchete > div > h3 > a{
+                text-decoration: none;
+                color: black;
+            }
+            
+            #manchete > div > h3 > a:hover{
+                text-decoration: underline;
+            }
+            
+            #manchete > div > p{
+                padding: 5px;
+                text-indent: 10px;
+                line-height: 1.1em;
+            }
+            
+            
+            #manchete > #imagem{
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: block;
+                width: 40%;
+                height: 100%;
+                float: right;
+            }
+            
+            main > hr{
+                margin: 30px 0;
+            }
+    */
 }
